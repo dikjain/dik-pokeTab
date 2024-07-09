@@ -172,7 +172,6 @@ function detailspage(a){
     let dtname = document.querySelector("#dtname")
     data_url = `https://pokeapi.co/api/v2/pokemon/${a}`
     fetch(data_url).then((Response)=>Response.json()).then((dat)=>{
-        console.log(dat)
         const themcol = typecol[dat.types[0].type.name]
         detpg.style.backgroundColor = themcol
         taip.style.backgroundColor = themcol

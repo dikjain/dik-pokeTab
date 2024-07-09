@@ -49,15 +49,24 @@
     justify-content: center;
     overflow: hidden;
     position: relative;
-    box-shadow: 3px 3px 5px red;
+    box-shadow: 3px 3px 5px white;
+    transition: 0.1s all ease-in-out;
+    position: relative;
+}
+.dispbox:hover{
+    z-index: 500;
+    border: 1px red solid;
+    transition: 0.1s all ease-in-out;
+    box-shadow: 0px 0px 20px red;
 }
 .namepk{
-    text-shadow: 0.5px 0.5px white;
+    text-shadow: 0.5px 0.5px black,-0.5px -0.5px black;
     font-weight: 800;
     bottom: 0;
     position: absolute;
-    color: black;
+    color: white;
     font-size: 15px;
+    font-family: "Kanit", sans-serif;
 }
 .photos{
     -webkit-filter: drop-shadow(3px 3px black) ;
@@ -129,7 +138,15 @@
     text-shadow: 1px 1px white,-1px -1px black;
     transition: 0.1s all ease-out;
 }
-
+#detsimg{
+    -webkit-filter: drop-shadow(5px 5px black);
+}
+#type,#type2{
+    box-shadow: 2px 2px black;
+}
+#dtanme{
+    font-family: "Kanit", sans-serif;
+}
 #dtbtn:hover{
     transition: 0.1s all ease-out;
     filter: drop-shadow(1px 1px  white);
